@@ -33,16 +33,3 @@ class Reaction_diagram:
         plt.ylabel('Energy (eV)', fontsize = 16, labelpad=15)
         plt.show()
 
-
-
-
-# data = input('Enter the dictionary of {step: energy}: ')
-# def get_data(data):
-#     try:
-#         type(data) == dict
-#     except ValueError:
-#         print('Data type is not dictionary')
-
-data = {'labels': ['A', 'B', 'C', 'D'], 'energies': [1,5,3,4], 'barriers':[False, True, False, False]}
-inst = Reaction_diagram(data)
-inst.plot_reaction_diagram()
